@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.maincomp{
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 10px;
+    margin-top: 15vh;
+}
+.sub{
+    position: relative;
+    top: -3.5vh;
+    width: 10vw;
+    height: 7.5vh;
+    border: none;
+    background-color: rebeccapurple ;
+    color: white;
+    border-radius: 50px;
+}
+.from-inner,.to-inner,.date,.class{
+    width: fit-content;
+    height: 18vh;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color:rgb(198, 203, 207);
+    padding: 10px;
+}
+.from,.to,.inner-date,.inner-class{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+@media only screen and (max-width:1000px){
+    body{
+        overflow-y: auto;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .maincomp{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .from-inner,.to-inner,.date,.class{
+        width: 40vw;
+        height: 15vh;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color:rgb(198, 203, 207);
+        margin:10px 0px 10px 0px;
+    }.from,.to,.inner-date,.inner-class{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 1px;
+    }
+    .sub{
+        top: 2.5vh;
+        width: 30vw;
+    }
+
+}
